@@ -1,0 +1,26 @@
+{
+	"name": "rag-engine",
+	"version": "1.0.0",
+	"description": "RAG engine powered by LlamaIndex, MongoDB, and OpenAI",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node --env-file=/config/.env app/index.js",
+		"dev": "nodemon --env-file=/config/.env app/index.js",
+		"debug": "nodemon --inspect=0.0.0.0:9229 --env-file=/config/.env app/index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.21.1",
+		"fs": "^0.0.1-security",
+		"llamaindex": "^0.8.3",
+		"mongodb": "^6.10.0",
+		"multer": "^1.4.5-lts.1",
+		"openai": "^4.70.2"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.7"
+	}
+}
